@@ -198,7 +198,7 @@ def render_dashboard(df: pd.DataFrame) -> None:
             )
         )
         st.info(
-            "A projecao assume uma taxa de crescimento constante (CAGR). Use apenas como sinalizacao tendencial."
+            "A projecao assume uma taxa de crescimento constante (CAGR)."
         )
     with proj_cols[1]:
         st.plotly_chart(create_projection_chart(df), width="stretch")
